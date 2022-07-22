@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Is Visible Directive Example</title>
+  <script src="https://unpkg.com/is-visible-directive@1.0.0/dist/index.js"></script>
+  <style>
+    body {
+      height: 200vh;
+    }
+
+    .box {
+      background-color: rgba(40, 40, 190, 1);
+      border: 4px solid rgb(20, 20, 120);
+      transition: background-color 1s, border 1s;
+      width: 350px;
+      height: 350px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      color: white;
+      font: 32px "Arial";
+    }
+
+    .invisible {
+      opacity: 0;
+    }
+
+    .red {
+      background-color: rgba(255, 0, 0, 1);
+    }
+
+    @keyframes fade-in {
+      0% {
+        transform: translateY(30);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    .fade-in {
+      animation: fade-in 0.8s ease forwards;
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+  <div data-add-class="fade-in" class="box invisible" data-class-offset="1">
+    <div>
+      The Box!
+    </div>
+  </div>
+  <div data-add-class="fade-in" class="box invisible" data-class-offset="0.4">
+    <div>
+      The Box 2!
+    </div>
+  </div>
+  <div data-remove-class="red" class="box red" data-class-offset="1">
+    <div>
+      The Box 3!
+    </div>
+  </div>
+</body>
+</html>

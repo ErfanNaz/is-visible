@@ -1,7 +1,7 @@
 {
   "name": "is-visible-directive",
   "version": "1.0.0",
-  "description": "",
+  "description": "With this lib, it is easy to add or remove classes from HTML by adding additional attributes to the HTML elements",
   "main": "dist/index.js",
   "source": "src/index.ts",
   "module": "dist/module.js",
@@ -12,8 +12,8 @@
     "start:example": "parcel ./src/index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["HTML","CSS","No-Code","directive"],
+  "author": "Erfan Nazmehr",
   "license": "ISC",
   "targets": {
     "main": {

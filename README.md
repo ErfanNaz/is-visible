@@ -6,7 +6,11 @@ Floating animations can be managed in a good way via Html and Css without a sing
 
 ## How to Use
 
-the latest version is build and pushed in the dist/index.js folder and can be included on any Webseite. 
+add the script Tag
+```Html
+<script src="https://unpkg.com/is-visible-directive@1.0.0/dist/index.js"></script>
+```
+to you Html Page and start using. 
 
 ## Code Example
 
